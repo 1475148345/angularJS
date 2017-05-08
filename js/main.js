@@ -121,7 +121,7 @@ var tagSwitch=function()
 var audioHtml5=function(){
     var audio=document.createElement('audio');
     var audioSrc=document.createElement('source');
-    audioSrc.src='./res/明天你好.mp3';
+    audioSrc.src='./res/burning.mp3';
     audio.setAttribute('autoplay',"autoplay");
     audio.setAttribute('loop',"loop");
     audio.appendChild(audioSrc);
