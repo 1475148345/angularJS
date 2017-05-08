@@ -71,10 +71,9 @@ var waited_develop=function(){
     for (var i=1;i<waitedli.length;i++){
         if(waitedli[i].addEventListener){
             waitedli[i].addEventListener("click",myfunction,false);
-                function myfunction(){
-            alert("待开发");
-        }
-
+            function myfunction(){
+                alert("待开发");
+            }
         }
         if(waitedli[i].attachEvent){
             waitedli[i].attachEvent("onclick",myfunction); 
@@ -124,6 +123,7 @@ var audioHtml5=function(){
     var audioSrc=document.createElement('source');
     audioSrc.src='./res/明天你好.mp3';
     audio.setAttribute('autoplay',"autoplay");
+    audio.setAttribute('loop',"loop");
     audio.appendChild(audioSrc);
     document.body.appendChild(audio);
 }
