@@ -65,7 +65,7 @@ var viewHeight=function(){
 var waited_develop=function(){
     var waitedli=document.getElementsByClassName("nav_bar_ul")[0].children;
     // var waiteda=waitedli.children;
-    console.log(waitedli);
+    // console.log(waitedli);
     // console.log(waiteda);
     
     for (var i=1;i<waitedli.length;i++){
