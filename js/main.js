@@ -117,6 +117,16 @@ var tagSwitch=function()
     	}
     }
 }
+// htmt5--audio
+
+var audioHtml5=function(){
+    var audio=document.createElement('audio');
+    var audioSrc=document.createElement('source');
+    audioSrc.src='./res/明天你好.mp3';
+    audio.setAttribute('autoplay',"autoplay");
+    audio.appendChild(audioSrc);
+    document.body.appendChild(audio);
+}
 // html5--canvas
 var canvashtml5 = document.getElementById("html5").getContext("2d");
 var canvascss3=document.getElementById("css3").getContext("2d");
@@ -417,3 +427,4 @@ canjq();
 canbs();
 ps();
 waited_develop();
+audioHtml5();
