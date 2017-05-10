@@ -72,7 +72,7 @@ section{
 
 }
 section.page_one{
-	background: url(../images/bg1.png) no-repeat center center;
+	background: url(../images/bg1.jpg) no-repeat center center;
 	animation:0.4s myscale 1;	
 	color: $white;	
 }
@@ -624,5 +624,38 @@ ul.con_style{
 	}
 	.canvas_con{
 		margin: 5px 10px;
+	}
+}
+//music-icon
+.music-sty{
+	width: 40px;
+	height: 40px !important;
+	background: #F98E6A;
+	position: fixed;
+	top: 200px;
+	left: 20px;
+	border-radius: 30px;
+	-webkit-animation: circle 5s infinite linear;
+	&:hover{
+		animation-play-state:paused;
+		-webkit-animation-play-state:paused;
+		cursor:pointer;
+		background: lighten(#F98E6A,10%)
+	}
+	i{
+		font-size: 40px !important;
+		-webkit-mask-image: -webkit-gradient(linear, 0 0, 0 bottom, from(blue), to(rgba(0, 0, 255, 0)));
+	}
+}
+.music-play{
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+@-webkit-keyframes circle{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
 	}
 }

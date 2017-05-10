@@ -124,8 +124,24 @@ var audioHtml5=function(){
     audioSrc.src='./res/burning.mp3';
     audio.setAttribute('autoplay',"autoplay");
     audio.setAttribute('loop',"loop");
+    audio.setAttribute('id',"audio");
     audio.appendChild(audioSrc);
     document.body.appendChild(audio);
+}
+var audioPause=function(){
+    var musicControl=document.getElementById('musicControl');
+    var audio=document.getElementById('audio');
+    musicControl.addEventListener('click',function(){
+        console.log(audio)
+        if(audio.paused==false){
+            audio.pause();
+            musicControl.className='music-sty  music-play';
+        }else{
+            audio.play();
+            musicControl.className='music-sty';
+        }
+        
+    })
 }
 // html5--canvas
 var canvashtml5 = document.getElementById("html5").getContext("2d");
@@ -428,3 +444,4 @@ canbs();
 ps();
 waited_develop();
 audioHtml5();
+audioPause();
