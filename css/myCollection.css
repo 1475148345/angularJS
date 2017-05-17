@@ -1,0 +1,194 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 14px;
+  font-family: '微软雅黑';
+  font-style: normal;
+  color: #fff; }
+
+a {
+  text-decoration: none; }
+
+a,
+a:hover {
+  transition: background 0.5s linear;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear; }
+
+em,
+i {
+  font-style: normal; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  vertical-align: middle; }
+
+input,
+select,
+textarea {
+  border: none;
+  background: none; }
+
+textarea {
+  resize: none; }
+
+p {
+  line-height: 22px; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clear {
+  clear: both;
+  overflow: hidden; }
+
+.position {
+  position: relative; }
+
+/*
+  *header部分
+*/
+body {
+  background: url(../images/bg-img.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat\9;
+  background-image: none \9;
+  /*兼容ie8以下*/ }
+
+.ceng {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0.5;
+  filter: alpha(opacity=80); }
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 222; }
+
+.header-sty,
+.content-nav,
+.content-show {
+  width: 1210px;
+  margin: 0 auto; }
+
+.header-sty {
+  margin-top: 20px; }
+
+.logo-sty {
+  float: left; }
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal; }
+  .logo i {
+    background: url(../images/pan.png) no-repeat;
+    width: 48px;
+    height: 23px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px; }
+
+.search-sty input {
+  border: 1px solid #ccc;
+  padding: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #fff;
+  width: 124px;
+  height: 16px;
+  float: right; }
+.search-sty span {
+  display: block;
+  height: 16px;
+  padding: 3px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  float: right;
+  background-color: #21b1db;
+  color: #000;
+  cursor: pointer; }
+  .search-sty span:hover {
+    background-color: #4bc1e4; }
+
+/*
+*导航部分
+*/
+.content-nav {
+  margin-top: 20px;
+  height: 40px;
+  background: #ccc;
+  border-radius: 5px; }
+  .content-nav ul {
+    height: 40px; }
+  .content-nav li {
+    float: left;
+    font-size: 20px; }
+    .content-nav li.active a {
+      color: #ed86aa; }
+    .content-nav li a {
+      margin-right: 20px;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      color: #333; }
+      .content-nav li a:hover {
+        color: #ed86aa; }
+
+/*
+*内容显示区
+*/
+.content-show {
+  height: 800px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 20px; }
+  .content-show ul {
+    padding-left: 30px; }
+  .content-show li {
+    list-style: decimal;
+    color: #333;
+    padding-top: 10px;
+    font-size: 18px; }
+    .content-show li a {
+      color: #333;
+      font-size: 18px;
+      transition: all .3s ease-in; }
+      .content-show li a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=myCollection.css.map */

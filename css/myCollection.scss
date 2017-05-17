@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@import "reset.scss";
+
+/*
+  *header部分
+*/
+
+body {
+    background: url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat\9;
+    background-image: none \9;
+    //    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./btn.png', sizingMethod='scale')\9;
+    /*兼容ie8以下*/
+}
+
+.ceng {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=80);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 222;
+}
+
+.header-sty,
+.content-nav,
+.content-show {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.header-sty {
+    margin-top: 20px;
+}
+
+.logo-sty {
+    float: left;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    i {
+        background: url(../images/pan.png) no-repeat;
+        width: 48px;
+        height: 23px;
+        display: inline-block;
+        background-size: contain;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+.search-sty {
+    input {
+        border: 1px solid #ccc;
+        padding: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        color: #fff;
+        width: 124px;
+        height: 16px;
+        float: right;
+    }
+    span {
+        display: block;
+        height: 16px;
+        padding: 3px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        float: right;
+        background-color: #21b1db;
+        color: #000;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten(#21b1db, 10%);
+        }
+    }
+}
+
+
+/*
+*导航部分
+*/
+
+.content-nav {
+    margin-top: 20px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 5px;
+    ul {
+        height: 40px;
+    }
+    li {
+        float: left;
+        font-size: 20px;
+        &.active a {
+            color: #ed86aa;
+        }
+        a {
+            margin-right: 20px;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            color: #333;
+            &:hover {
+                color: #ed86aa;
+            }
+        }
+    }
+}
+
+
+/*
+*内容显示区
+*/
+
+.content-show {
+    height: 800px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    ul {
+        padding-left: 30px;
+    }
+    li {
+        list-style: decimal;
+        color: #333;
+        padding-top: 10px;
+        font-size: 18px;
+        a {
+            color: #333;
+            font-size: 18px;
+            transition: all .3s ease-in;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
