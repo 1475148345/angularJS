@@ -1,305 +1,73 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <title>个人信息</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="fonticon/iconfont.css">
-    <link rel="shortcut icon" href="./images/star.ico">
+    <meta charset="utf-8">
+    <title>我的收藏</title>
+    <link rel="stylesheet" href="./css/myCollection.css" />
+    <link rel='icon' href="./images/pan.ico" type=‘image/x-ico’ />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/myCollection.js"></script>
 </head>
 
 <body>
-    <div class="music-sty" id="musicControl">
-        <i class="iconfont icon-music"></i>
+    <div class="ceng"></div>
+    <div class="container">
+        <!--       头部-->
+        <div class="header-sty clear">
+            <a href="#" class="logo-sty"><h1 class="logo"><i></i>我的收藏</h1></a>
+            <div class="fr search-sty">
+                <span><i></i>搜索</span>
+                <input type="text" placeholder="搜索内容..." />
+            </div>
+        </div>
+        <!--        导航栏-->
+        <div class="content-nav">
+            <ul class="clear">
+                <li class="active"><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">fontIcon</a></li>
+                <li><a href="#">react native</a></li>
+            </ul>
+        </div>
+        <!--        内容显示区-->
+        <div class="content-show">
+
+            <ul>
+                <li><a href="http://www.iteye.com/news/27580" target="_blank">emmet代码自动生成插件</a></li>
+                <li><a href="http://www.codeceo.com/article/7-wonderful-html5-pixel-animation.html" target="_blank">7款让人惊叹的HTML5粒子动画特效</a></li>
+                <li><a href="http://w3help.org/zh-cn/causes/" target="_blank">html兼容性相关</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://blog.csdn.net/baidu_24024601/article/details/51131368" target="_blank">用css实现水平垂直居中的几种方法</a></li>
+                <li><a href="https://www.sass.hk/" target="_blank">css预处理器sass</a></li>
+                <li><a href="http://lesscss.cn/" target="_blank">css预处理器less</a></li>
+                <li><a href="http://www.zhangxinxu.com/jq/stylus/" target="_blank">css预处理器Stylus</a></li>
+                <li><a href="http://koala-app.com/index-zh.html" target="_blank">koala编译工具</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://www.swiper.com.cn/" target="_blank">swiper轮播插件官网</a></li>
+                <li><a href="http://www.jb51.net/article/24101.htm" target="_blank">javascript深入理解js闭包</a></li>
+                <li><a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank">ECMAScript 6入门</a></li>
+                <li><a href="http://www.cnblogs.com/yunfeifei/p/4453690.html" target="_blank">JavaScript进阶之路——认识和使用Promise，重构你的Js代码</a></li>
+                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank">浏览器的同源策略</a></li>
+                <li><a href="http://www.cnblogs.com/tarol/p/5336666.html" target="_blank">js的链式调用</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://icomoon.io/" target="_blank">https://icomoon.io/</a></li>
+                <li><a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a></li>
+                <li><a href="http://www.iconfont.cn/" target="_blank">阿里巴巴矢量图http://www.iconfont.cn/</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://reactnative.cn/" target="_blank">react native中文网</a></li>
+                <li><a href="https://mobile.ant.design/docs/react/introduce" target="_blank">ant mobile</a></li>
+                <li><a href="http://blog.csdn.net/liu__520/article/details/52809815" target="_blank">React-Native之微信好友、朋友圈分享、支付</a></li>
+                <li><a href="https://github.com/beefe/react-native-wechat-android/wiki" target="_blank">React-Native之微信好友、朋友圈分享、支付 android</a></li>
+            </ul>
+        </div>
     </div>
-    <aside>
-        <a class="cur_a"><span>首页</span></a>
-        <a><span>关于我</span></a>
-        <a><span>技能</span></a>
-        <a><span>经验</span></a>
-        <a><span>联系我</span></a>
-    </aside>
-    <section class="page_one" id="page1">
-        <nav>
-            <div class="nav_wrap">
-                <div class="resume_logo">
-                    <a href="index.html">Resume</a>
-                </div>
-                <div class="nav_bar">
-                    <ul class="nav_bar_ul">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">myCollege</a></li>
-                        <li><a href="#">page3</a></li>
-                        <li><a href="#">page4</a></li>
-                        <li><a href="#">page5</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="cen_con">
-            <div class="portrait">
-                <img onmousemove="this.src='images/22.png'" / onmouseout="this.src='images/portrait1.jpg'" / src="images/portrait1.jpg">
-            </div>
-            <div class="cen_text">
-                <h2>世上只有想不通的人，没有走不通的路。</h2>
-                <hr>
-                <h3>潘超</h3>
-                <h3>Web前端工程师</h3>
-                <h3>四川/成都</h3>
-
-
-            </div>
-
-        </div>
-        <div class="down_arrow">
-            <a class="scroll"><span></span></a>
-        </div>
-
-    </section>
-
-    <section class="page_two" id="page2">
-        <div class="con_wrap">
-            <div class="tit_wrap">
-                <h1>关于我</h1>
-                <div class="scissors">
-                    <span></span>
-                </div>
-                <h2> 如果debugging是一种消灭bug的过程,那编程就一定是把bug放进去的过程。</h2>
-            </div>
-            <div class="myinfo">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td rowspan="6">
-                                <img src="images/portrait1.jpg">
-                            </td>
-                            <td>姓名 | 潘超</td>
-                            <td>手机 | 13880228854</td>
-
-                        </tr>
-                        <tr>
-                            <td>性别 | 男</td>
-                            <td>邮箱 | 1475148345@qq.com</td>
-                        </tr>
-                        <tr>
-                            <td>出生 | 1992.12.22</td>
-
-                            <td>QQ号 | 1475148345</td>
-                        </tr>
-                        <tr>
-                            <td>居住 | 四川省眉山市</td>
-                            <td>户籍 | 四川省成都市</td>
-                        </tr>
-                        <tr>
-                            <td>学历 | 大专</td>
-                            <td>学校 | 四川师范大学</td>
-                        </tr>
-                        <tr>
-                            <td>专业 | 计算机与网络技术</td>
-                            <td>英语 | 英语三级</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <p>项目：</p>
-                                <br>
-                                <a>1.保友无忧</a>
-                                <br>
-                                <a>2.唐伯虎</a>
-                                <br>
-                                <br>
-                                <a>3.团子</a>
-                                <br>
-                                <br>
-                                <a>4.猿团汽车宝</a>
-                                <br>
-                                <br>
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="down_arrow">
-            <a class="scroll"><span></span></a>
-        </div>
-    </section>
-    <section class="page_three" id="page3">
-        <div class="con_wrap">
-            <div class="tit_wrap">
-                <h1>技能</h1>
-                <div class="scissors">
-                    <span></span>
-                </div>
-                <h2>代码，我们眼中的世界，别人眼中的天书。</h2>
-            </div>
-            <div class="skill_con">
-                <div class="canvas_wrap">
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">90%</p>
-                            <p class="chart_title">HTML5</p>
-                        </div>
-                        <canvas id="html5" width=160 height=160></canvas>
-                    </div>
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">90%</p>
-                            <p class="chart_title">CSS3</p>
-                        </div>
-                        <canvas id="css3" width=160 height=160></canvas>
-                    </div>
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">75%</p>
-                            <p class="chart_title">JS</p>
-                        </div>
-                        <canvas id="js" width=160 height=160></canvas>
-                    </div>
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">80%</p>
-                            <p class="chart_title">JQUERY</p>
-                        </div>
-                        <canvas id="jq" width=160 height=160></canvas>
-                    </div>
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">70%</p>
-                            <p class="chart_title">BOOTSTRAP</p>
-                        </div>
-                        <canvas id="bs" width=160 height=160></canvas>
-                    </div>
-                    <div class="canvas_con">
-                        <div class="text_con">
-                            <p class="percent">80%</p>
-                            <p class="chart_title">PS</p>
-                        </div>
-                        <canvas id="ps" width=160 height=160></canvas>
-                    </div>
-                </div>
-                <div class="text_wrap">
-                    <p>1. 熟练HTML5，CSS3，es6技术，开发符合W3C标准的前端网页。</p>
-                    <p>2. 熟练使用jQuery，react native，bootstrap，sass等前端框架技术。</p>
-                    <p>3. 熟悉Ajax的运行机制，能使用ajax进行数据交互。</p>
-                    <p>4. 熟练使用PS，墨刀等工具，能快速切图和搭建原型图。</p>
-                    <p>5. 熟悉W3C标准，对表现与数据分离、Web语义化等有较为深刻的理解。</p>
-                    <p>6. 精通流体布局和flex弹性布局，能适应各种分辨率。</p>
-                    <p>7. 熟悉各种主流浏览器的差异性，有解决主流浏览器的兼容性问题的经验。</p>
-                </div>
-            </div>
-
-        </div>
-        <div class="down_arrow">
-            <a class="scroll"><span></span></a>
-        </div>
-    </section>
-    <section class="page_four" id="page4">
-        <div class="con_wrap">
-            <div class="tit_wrap">
-                <h1>项目经验</h1>
-                <div class="scissors">
-                    <span></span>
-                </div>
-                <h2>我现在做的一切仅仅是为了不让未来的自己后悔。</h2>
-            </div>
-            <div class="work_con">
-                <div class="programe">
-                    <div class="work_time">唐伯虎</div>
-                    <div class="work_text">
-                        <div class="triangle-left"></div>
-                        <div class="exCon">
-                            <p>开发环境:window7</p>
-                            <P>开发工具：brackets，Photoshop，appcan，koala</P>
-                            <p>使用框架: sass，jQuery</p>
-                            <p>前端开发周期:1个月</p>
-                            <p>项目描述：</p>
-                            <p>&nbsp;&nbsp;1，利用appcan的UI完成了前端静态页面的搭建与效果展示。</p>
-                            <p>&nbsp;&nbsp;2，利用ajax完成前后台数据的交互。</p>
-                            <p>&nbsp;&nbsp;3，页面优化。</p>
-                            <p>项目简介：</p>
-                            <p>唐伯虎，是中国首个上门到店推拿O2O预约服务平台，专注于推拿、足疗、理疗、SPA上门和到店预约服务。平台聚集了众多的品牌商家和手法精湛的明星技师，用户可以通过微信公众号、手机APP、400客服电话下单，上门推拿和到店消费自由选择，客户既可以线上订购上门推拿，也可以线上预约到各门店去消费。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="programe">
-                    <div class="work_time">团子</div>
-                    <div class="work_text">
-                        <div class="triangle-left"></div>
-                        <div class="exCon">
-                            <p>开发环境:window7</p>
-                            <P>开发工具：brackets，Photoshop，appcan，koala</P>
-                            <p>使用框架: sass，jQuery</p>
-                            <p>前端开发周期:1个月</p>
-                            <p>项目描述：</p>
-                            <p>利用RN框架，对页面进行模块化封装，完成前端页面的搭建、交互、优化。</p>
-                            <p>项目简介：</p>
-                            <p>该项目是一个校园APP，主要模块有：聊天模块，附近活动，好友动态展示等。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="down_arrow">
-            <a class="scroll"><span></span></a>
-        </div>
-    </section>
-    <section class="page_five" id="page5">
-        <div class="con_wrap">
-            <div class="tit_wrap">
-                <h1>联系我</h1>
-                <div class="scissors">
-                    <span></span>
-                </div>
-                <h2>耐得住寂寞，做得成大事。</h2>
-            </div>
-            <div class="contact_detail">
-                <ul class="con_style">
-                    <li>
-                        <span></span>
-                        <p>四川省成都市高新区</p>
-                    </li>
-                    <li>
-                        <span></span>
-                        <p>1475148345@qq.com</p>
-                    </li>
-                    <li>
-                        <span></span>
-                        <p>13880228854</p>
-                    </li>
-                </ul>
-                <div class="contact_info">
-                    <form action="" method="get">
-                        <label>
-                            <input type="text" id="username" placeholder="你的名字" required="">
-                            <p id="check_username"></p>
-                        </label>
-                        <label>
-                            <input type="text" id="usermail" placeholder="你的邮箱" required="">
-                            <p id="check_usermail"></p>
-                        </label>
-                        <label>
-                            <input type="text" id="usertheme" placeholder="主题" required="" maxlength="25">
-                            <p id="check_usertheme"></p>
-                        </label>
-                        <label>
-                            <textarea id="usercon" placeholder="内容" required=""></textarea>
-                            <p id="check_usercon"></p>
-                        </label>
-                        <button>发送</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--<div style="text-align:center;">
-	<embed src="http://bd.kuwo.cn/yinyue/7165984?from=baidu"  width="0" height="0">
-</div>-->
 
 </body>
-<script type="text/javascript" src="js/main.js"></script>
 
 </html>
